@@ -1,0 +1,84 @@
+/* 🌄 General Page Style */
+body {
+    background: linear-gradient(135deg, #ffe4b5, #f7d7a3, #f9a825);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/* 🎴 Card Style */
+.card {
+    background-color: #fff9f0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease forwards;
+    -webkit-animation: fadeIn 0.8s ease forwards;
+}
+
+/* ✨ Header */
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff7b00;
+    letter-spacing: 1px;
+}
+
+/* 🧠 Text inside card */
+.card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* 🔘 Custom Button */
+.btn-custom {
+    background-color: #ffb347;
+    color: #000;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 10px 25px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff9800;
+    transform: scale(1.05);
+}
+
+/* 🧿 Bootstrap Button Override */
+.btn-primary {
+    border-radius: 12px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+/* 🧍 Footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #555;
+    }
+
+    /* 🌀 Animation */
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
