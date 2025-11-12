@@ -20,3 +20,35 @@ function askTimeAndGreet() {
 // Optionally, you can call askTimeAndGreet() on a button click from your HTML page.
 // Example HTML:
 // <button onclick="askTimeAndGreet()">Check Greeting</button>
+
+const recommendations = {
+    "science-notebook": [
+        { name: "Microscope", img: "images/microscope.png", desc: "Small lab microscope" },
+        { name: "Calculator", img: "images/calculator.png", desc: "Scientific calculator" }
+    ],
+    "math-notebook": [
+        { name: "Graph Ruler", img: "images/ruler.png", desc: "Precision ruler for graphs" },
+        { name: "Compass", img: "images/compass.png", desc: "Math drawing compass" }
+    ],
+    // أضف منتجات أكثر حسب الحاجة
+    };
+
+    // دالة لعرض التوصيات
+    function showRecommendations(productId) {
+    const container = document.getElementById("recommendation-cards");
+    container.innerHTML = ""; // مسح القديم
+    if (recommendations[productId]) {
+        recommendations[productId].forEach(item => {
+        const card = document.createElement("div");
+        card.className = "recommendation-card";
+        card.innerHTML = `
+            <img src="${item.img}" alt="${item.name}">
+            <h3>${item.name}</h3>
+            <p>${item.desc}</p>
+        `;
+        container.appendChild(card);
+        });
+    } else {
+        container.innerHTML = "<p>No recommendations available for this product.</p>";
+    }
+    }

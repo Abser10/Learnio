@@ -4,19 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="add.css">
         <title>TEST</title>
     </head>
     <body>
-        <div>
-            <h1>Hello Testing</h1>
-        </div>
+        <div class="card">
+            <div>
+                <h1>Hello Testing</h1>
+            </div>
             <button onclick="askTimeAndGreet()"
-                style=" background-color: rgb(250, 199, 134);color: black;
-                width: 150px; justify-content: center; flex-direction: row; display: flex;
-                border-radius: 8px;">Check Greeting
+                class="btn btn-custom">
+                Ask Time and Greet
             </button>
 
-            <button type="button" class="btn btn-primary " data-bs-toggle="button" autocomplete="off">Toggle button</button>
+            <div class="recommendation-section">
+            <h2>📚 Recommended Tools for You</h2>
+            <div class="recommendation-cards" id="recommendation-cards">
+                <button onclick="showRecommendations('science-notebook')" class="btn btn-custom">
+                    Science Notebook
+                </button>
+                <button onclick="showRecommendations('math-notebook')" class="btn btn-custom">Math
+                    Notebook</button>
+
+            </div>
+        </div>
+        </div>
+
+
         <script src="voice.js"></script>
     </body>
 </html>
