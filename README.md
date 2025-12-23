@@ -15,7 +15,7 @@ Built using **HTML, CSS, and Vanilla JavaScript** — no frameworks, just clean 
     <img src="https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github" alt="Live Demo Badge" />
   </a>
 </p>
----
+
 
 ## 🛠️ Features
 
